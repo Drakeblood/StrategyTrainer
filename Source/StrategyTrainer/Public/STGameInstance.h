@@ -14,4 +14,6 @@ class STRATEGYTRAINER_API USTGameInstance : public UGameInstance
 {
 	GENERATED_BODY()
 	
+	UFUNCTION(BlueprintCallable, meta = (WorldContext = "WorldContextObject"))
+	static TArray<AActor*> SortByDistance(UObject* WorldContextObject, TArray<AActor*> Actors);
 };
